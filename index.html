@@ -3,187 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume | Curtis Koster</title>
+    <title>Curtis Koster</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="hero">
-        <p class="eyebrow">Resume</p>
-        <h1>Curtis Koster</h1>
+    <div class="landing-page">
+      <div class="landing-hero">
+        <p class="eyebrow">Curtis Koster</p>
+        <h1>Hi, I’m Curtis.</h1>
         <p class="subtitle">Cloud Architect</p>
-        <p class="mini-nav">Quick jump: <a href="#education">Education</a> | <a href="#certifications">AWS Certifications</a></p>
-      </header>
-
-      <footer class="footer">📬 Message Me On LinkedIn: <a href="https://www.linkedin.com/in/curtis-k/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/curtis-k/</a></footer>
-
-      <section class="card">
-        <div class="section-heading">
-          <h2>About Me</h2>
-        </div>
-        <p>
-          I design Cloud Solutions, author AWS Exams, and philosophize about the future of cloud. I have a passion for building scalable, secure, and innovative cloud solutions that empower businesses to achieve their goals. With over 10 years of experience in the industry, I have a proven track record of delivering high-quality cloud architectures and contributing to the development of AWS certification exams. I am dedicated to continuous learning and sharing my knowledge with the community through writing and speaking engagements.
-        </p>
-      </section>
-
-      <section id="work-history" class="card">
-        <div class="section-heading"><h2>Work History</h2></div>
-        <div class="item">
-          <div class="work-row">
-            <img class="work-logo" src="images/frblogo.png" alt="Federal Reserve System logo" />
-            <div>
-              <h3>Senior Cloud Architect</h3>
-              <p class="meta">Federal Reserve System • 2021 - Present</p>
-              <p class="meta">As a senior cloud architect - my role includes designing, reviewing, and implementing cloud architectures at scale that back the Federal Reserve System's cloud footprint.</p>
-            </div>
-          </div>
-          <h4>Federal Reserve System IT Excellence Award</h4>
-          <p>Recognized for architecture and engineering contributions in response to designing and leading the implementation of new automation for AWS account management. The automation provides a scalable and repeatble process for the creation and management of AWS accounts.</p>
-          <h4>Internal Speaking Engagements</h4>
-          <p>
-            Created and ran an AWS Sagemaker workshop and guided attendees through the process of building and deploying a model with SageMaker.<br />
-            <br>Presented at a data scientist focused internal conference and shared research and findings with attendees.</br>
-          </p>
-          <h4>Secure Enclaves & Payment Technology</h4>
-          <p>
-            Implemented a payment processing prototype solution that leveraged custom Docker containers and AWS Nitro Enclaves to securly handle the processing of transactions. Created a basic HTML front-end to simulate the user experience.<br />
-            <br>Researched credit card fraud and support developing a Python based solution for generating synthetic transaction data to be used for testing fraud detection algorithms. Supported the publishing of <a href="https://www.federalreserve.gov/econres/feds/cardsim-a-bayesian-simulator-for-payment-card-fraud-detection-research.htm">CardSim: A Bayesian Simulator for Payment Card Fraud Detection Research</a> which presents this work.</br>
-          </p>
-          <h4>AWS Platform Architecture</h4>
-          <p>
-            Provided cloud architecture consultations with internal teams across the System. Reviewed proposed architectures for cost, security, and well-architected.<br />
-            <br>Designed and led the implementation of a cross-AWS partition event drive architecture for the creation and management of both AWS Gov Cloud and Commercial AWS accounts.</br>
-            <br>Designed and implemented an internal, standard pattern for automating across both AWS Commercial and Gov Cloud partitions.</br>
-            <br>Designed and led the implementation of an AWS native/event-driven architecture to centralize AWS generated logs from both AWS partitions</br>
-            <br>Responsible for meeting with and advising internal cloud engineering teams on best practices and design decisions for their cloud architecutre.</br>
-            <br>Responsible for reviewing AWS service functionality and crafting SCP statements to implement guardrails to guide the usage of certain AWS services.</br>
-            <br>Responsible for purchasing AWS Saving Plans and configuring cost management strategies at the Organizational level.</br>
-          </p>
-        </div>
-        <div class="item">
-          <div class="work-row">
-            <img class="work-logo" src="images/smx.jpeg" alt="SMX logo" />
-            <div>
-              <h3>Solution Architect</h3>
-              <p class="meta">SMX • 2019 - 2021</p>
-              <p class="meta">As a solution architect - my role was to provide cloud architecture consultations with customers and implement agreed upon solutions.</p>
-            </div>
-          </div>
-          <h4>Firewall Automation</h4>
-          <p>
-            Created an event drive flow - that upon the creation of a new AWS VPN Tunnel - the .XML tunnel metadata was exported to S3 and a Step Function ran that configured EC2 based Firewalls with the tunnel configurations. 
-          </p>
-          <h4>Client Facing Work</h4>
-          <p>
-            Implemented custom Python based for clients following an object oriented design pattern with corresponding unit tests.<br />
-            <br>Met with and advised clients on their cloud architecture and design decisions.</br>
-            <br>Presented a Machine Learning overview to invited customers at an AWS ReInvent evening event.</br>
-          </p>
-        </div>
-        <div class="item">
-          <div class="work-row">
-            <img class="work-logo" src="images/infor.png" alt="Infor Logo" />
-            <div>
-              <h3>Software Engineer</h3>
-              <p class="meta">Infor • 2015 - 2019</p>
-              <p class="meta">As a software engineer - my role was to develop and maintain internal platform tooling solutions.</p>
-            </div>
-          </div>
-          <h4>SSO Login Solution</h4>
-          <p>
-            Created a Lambda SSO function that was used across internal tooling solutions to authenticate corperate users into internal applications.
-          </p>
-          <h4>Cloud Deployment Platform</h4>
-          <p>
-            Used Go to create a custom IaC framework. Framework created a process to deploy a co-ordinated set of CloudFormation templates into a given AWS account. Created a S3 static webpage that used Cognito for deployment teams to log into and manage their set of deployed templates. Captured and provided metrics on deployment details.
-          </p>
-          <h4>EC2 Management System</h4>
-          <p>
-            Created an AWS S3 static website front end with React and an AWS serverless (Lambda/Step Function/DynmoaDB) backend. Cognito user pool tied users to groups. Groups could define schedules for their AWS accounts to adjust appropriately tagged Auto Scaling sizes and the starting/stopping of EC2 instances. Used by multiple teams across the globe. A weekly job used the schedule information to created an executive report on costs associated with the of the managed infrastructure. 
-          </p>
-        </div>
-      </section>
-      <section id="education" class="card">
-        <div class="section-heading"><h2>Education</h2></div>
-        <div class="item">
-          <div class="edu-row">
-            <img class="edu-logo" src="images/gtlogo.png" alt="Georgia Tech logo" />
-            <div>
-              <h3>Masters in Computer Science</h3>
-              <p class="meta">Artificial Intelligence Specialization</p>
-              <p class="meta">Georgia Tech • 2016 - 2018</p>
-            </div>
-          </div>
-          <div class="meta"> </div>
-          <h4>Projects</h4>
-          <p>
-            Created a pattern recognition solution - given a series of objects, determine the next object in the series.<br />
-            <br>Leveraging past S&P500 data - created a trading algorithm that used technical indicators to make buy/sell/hold decisions.</br>
-            <br>Evaluated and compared the performance of various families of ML algorithms including Reinforced Learning, Supervised, and Unsupervised algorithms against provided data sets.
-          </p>
-          <h4>Alumni Activities</h4>
-          <p>
-            Participated in Computer Science Industry Round Tables with current students.
-          </p>
-          
-        </div>
-      </section>
-
-      <section id="certifications" class="card">
-        <div class="section-heading"><h2>AWS Certifications</h2></div>
-          <article class="cert-card">
-          <div class="cert-card-content">
-            <img class="cert-badge" src="images/dopbadge.png" alt="AWS Certified DevOps Engineer Professional badge" />
-            <div>
-              <h3>AWS Certified Lead SME DevOps Engineer – Professional</h3>
-              <p class="meta">Issued: x 2023 • Active</p>
-              <p><a class="cert-link" href="https://www.your-aws-certificates-url.com/transcript" target="_blank" rel="noopener noreferrer">View AWS Certification Transcript</a></p>
-            </div>
-          </div>
-        </article>
-        <article class="cert-card">
-          <div class="cert-card-content">
-            <img class="cert-badge" src="images/dopbadge.png" alt="AWS Certified DevOps Engineer Professional badge" />
-            <div>
-              <h3>AWS Certified DevOps Engineer – Professional</h3>
-              <p class="meta">Issued: April 2019 • Active</p>
-              <p><a class="cert-link" href="https://www.your-aws-certificates-url.com/transcript" target="_blank" rel="noopener noreferrer">View AWS Certification Transcript</a></p>
-            </div>
-          </div>
-        </article>
-         <article class="cert-card">
-          <div class="cert-card-content">
-            <img class="cert-badge" src="images/genaibadge.png" alt="AWS Certified Generative AI Developer Professional badge" />
-            <div>
-              <h3>AWS Certified Generative AI Developer – Professional</h3>
-              <p class="meta">Issued: March 2026 • Active</p>
-              <p><a class="cert-link" href="https://www.your-aws-certificates-url.com/transcript" target="_blank" rel="noopener noreferrer">View AWS Certification Transcript</a></p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="card">
-        <div class="section-heading"><h2>Industry Recognition</h2></div>
-        <div class="item">
-          <h3>AWS 2025 Top Performing Subject Matter Expert</h3>
-          <p class="meta">AWS • 2025</p>
-          <p>Recognized by AWS Training & Certification as a Top Performing Subject Matter Expert. During the 2025 calendar year, I contributed to the beta creation of the GenAI Developer Professional certification and continued support of the DevOps Engineer Professional exam.</p>
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="section-heading"><h2>Skills</h2></div>
-        <div class="skills-grid">
-          <div class="skill-pill">AWS</div>
-          <div class="skill-pill">Go</div>
-          <div class="skill-pill">Python</div>
-          <div class="skill-pill">Terraform</div>
-          <div class="skill-pill">FinOps</div>
-          <div class="skill-pill">DevOps</div>
-          <div class="skill-pill">AWS Well-Archicted Framework</div>
-        </div>
-      </section>
+        <a class="landing-link" href="resume.html">Resume</a>
+        <a class="landing-link" href="https://www.linkedin.com/in/curtis-k/" target="_blank" rel="noopener noreferrer">Connect On LinkedIn</a>
+        <a class="landing-link" href="speaking.html">Coaching & Speaking Engagements</a>
+      </div>
     </div>
   </body>
 </html>
